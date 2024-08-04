@@ -1,24 +1,41 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"
          pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <link
         rel="stylesheet"
         href="${pageContext.request.contextPath}/resources/css/common/header.css"
 />
-<header class="max-w-100 position-sticky top-0 z-1">
-  <%--로고--%>
-  <div class="w-100">
-    <a href="/">보령엄마</a>
-  </div>
-
-  <%--검색--%>
-  <nav class="search-form">
-    <form>
-      <div class="search-input">
-        <input class="search-bar" type="text" placeholder="학원을 검색해주세요.">
-        <span class="search-image--icon">
-        <img src="${pageContext.request.contextPath}/resources/imgs/search_icon.png" alt="검색이미지">
-        </span>
+<header>
+  <div>
+    <div class="header-logo">
+      <div>
+        <a href="/">
+          <img src="${pageContext.request.contextPath}/resources/imgs/logo.png" alt="">
+        </a>
+        <p>가산땃쥐</p>
       </div>
-    </form>
-  </nav>
+      <c:choose>
+        <c:when test="${empty member}">
+          <a href="<c:url value='/member/member.do?method=login'/>">로그인하기</a>
+        </c:when>
+        <c:otherwise>
+          <a href="/member/member.do?method=myPage">${member.nickname}</a>
+        </c:otherwise>
+      </c:choose>
+    </div>
+
+
+    <nav class="search-form">
+      <form action="/search?m=search" method="post">
+        <div class="search-input">
+          <jsp:include page="${pageContext.request.contextPath}/WEB-INF/jsp/main/autosearch.jsp"/>
+          <%--        <input class="search-bar" type="text" placeholder="학원을 검색해주세요." >--%>
+          <span class="search-image--icon">
+            <img src="${pageContext.request.contextPath}/resources/imgs/search_icon.png" alt="검색이미지">
+        </span>
+
+        </div>
+      </form>
+    </nav>
+  </div>
 </header>

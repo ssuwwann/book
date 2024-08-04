@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: "Noto Serif KR", "Jua", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.background-wrapper {
-    width: 100%;
-    background-color: #ccc8c8;
+body {
+    background-color: #f8f9fa;
 }
 
 main {
@@ -12,22 +15,103 @@ main {
     width: 100%;
 }
 
+main > div {
+    margin-top: 150px;
+}
+
 section {
     border: 1px solid violet;
     height: 175px;
 }
 
+a {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 501px) {
     main {
-        background-color: darkcyan;
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 500px) {
     main {
-        background-color: rebeccapurple;
         margin: 0;
     }
 }
 
+.search-count-academy {
+    font-weight: bolder;
+    font-size: 14px;
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+.main-contents {
+    margin-top: 1px;
+}
+
+.main-card {
+    background-color: white;
+    border-bottom: 1px solid #b4b2b2;
+}
+
+.academy-item-name {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.main-ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.academy-item-content {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+
+.academy-item-address {
+    font-size: 14px;
+}
+
+.academy-item-ldate {
+    font-size: 14px;
+    flex-direction: row;
+}
+
+.academy-item-limit {
+    font-size: 14px;
+    flex-direction: row;
+}
+
+.academy-item-menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50px;
+    text-align: center;
+
+}
+
+.academy-rate {
+    width: 50%;
+}
+
+.academy-rate-img {
+    height: 20px;
+    width: 20px;
+}
+
+.academy-review {
+    width: 50%;
+
+}
+
+.academy-count-img {
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    font-family: "Noto Serif KR", "Jua", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    max-width: 500px;
+    width: 100%;
+    height: 175px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    box-sizing: border-box;
+    height: 70px;
+    max-width: 500px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #f8f9fa;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 8px;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-logo > div {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo P {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.header-logo img {
+    width: 45px;
+    height: 50px;
+}
+
+@media screen and (min-width: 501px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin: 0;
+    }
+}
+
+/*유리*/
+.academy-container {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.academy-item {
+    padding: 15px;
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.academy-content {
+    padding-top: 2rem;
+}
+
+.content div::first-letter {
+    margin-left: 10px;
+}
+
+.content-info p {
+    font-size: 13px;
+    color: gray;
+}
+
+.academy-score {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 25px;
+}
+
+.review {
+    display: block;
+}
+
+.menu {
+    align-items: center;
+    width: 115px;
+}
+
+.menu p {
+    margin-left: 3px;
+}
+
+.button {
+    color: red;
+    border: 1px;
+    border-radius: 7px;
+    height: 40px;
+}
+
+.info-container {
+    padding: 15px;
+}
+
+.info-item {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.info-item div:first-child {
+    display: flex;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.info-wrapper img {
+    margin-right: 10px;
+}
+
+.info-wrapper p {
+    margin: 0;;
+    font-weight: bold;
+}
+
+.hb-img {
+    width: 100px;
+    height: 100px;;
+}
+
+
+/*수완*/
+img {
+    height: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 16px;
+}
+
+
+#allReviewBtn {
+    margin-top: 1rem;
+    width: 100%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: #fff;
+    color: red;
+    border: 1px solid black;
+}
+
+#reviewButton {
+    max-height: 450px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.review-wrapper > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+.review-card--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.review-card--header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #b4b2b2;
+}
+
+
+.review-card--content {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.review-card--content > span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-card--info {
+    display: flex;
+    font-size: 12px;
+}
+
+.review-card--info li:first-child {
+    padding-right: 1rem;
+}
+
+.review-card--info li:nth-child(2) {
+    padding: 0 1rem;
+}
+
+.review-card--info li:last-child {
+    padding-left: 1rem;
+}
+
+.review-card--info li:not(:last-child) {
+    border-right: 1px solid #b4b2b2;
+}
+
+.review-wrapper {
+    padding: 15px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+}
+
+.review-item p {
+    margin: 0;
+}
+
+.review-item img {
+    margin-right: 10px;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+div[class^="review-card-"] {
+    background-color: #f8f9fa;
+    margin-top: 10px;
+}
+
+/* 예약 */
+.book-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.book-container {
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bookBtn, #cancelBtn {
+    border-radius: 30px;
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    opacity: 100%;
+}
+
+#fullyBtn {
+    border-radius: 30px;
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #ccc8c8;
+    border: 1px solid #ccc8c8;
+    opacity: 100%;
+}
+
+footer {
+    padding: 2rem 2rem 10rem !important;
+}
