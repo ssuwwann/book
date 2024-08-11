@@ -55,6 +55,8 @@ public class BoardController extends HttpServlet {
       // book user 불러오기
       HttpSession session = req.getSession(false);
       Member member = (Member) session.getAttribute("member");
+      System.out.print("board member >> ");
+      System.out.println(member);
       if (member != null) {
         memberSeq = member.getSeq();
         bookuser = bookService.getBookUser(memberSeq, seq);

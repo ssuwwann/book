@@ -1,6 +1,10 @@
 footer {
     padding: 2rem 2rem 0;
     box-sizing: border-box;
+    position: relative;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -10,6 +14,11 @@ h2 {
 
 h3 {
     font-size: 15px;
+}
+
+.footer-wrapper {
+    max-width: 500px;
+    width: 100%;
 }
 
 .footer-info {

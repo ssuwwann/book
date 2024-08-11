@@ -53,6 +53,7 @@ public class CookieFilter implements Filter {
       }
     } else if (!hasCookie && session != null) {
       session.removeAttribute("member");
+      //session.invalidate();
     } else if (hasCookie && session != null) {
       Member sessionMember = (Member) session.getAttribute("member");
       if (sessionMember == null) {

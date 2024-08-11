@@ -37,10 +37,9 @@
   </section>
 
 
-  <jsp:include page="/WEB-INF/jsp/common/footer.jsp"/>
-
   <jsp:include page="/WEB-INF/jsp/board/book.jsp"/>
   <jsp:include page="/WEB-INF/jsp/common/bottom_menu.jsp"/>
 </main>
+<jsp:include page="/WEB-INF/jsp/common/footer.jsp"/>
 </body>
 </html>

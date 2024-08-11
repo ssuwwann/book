@@ -44,8 +44,7 @@
       </c:forEach>
     </div>
   </div>
-  <jsp:include page="/WEB-INF/jsp/common/footer.jsp"/>
-
 </main>
+<jsp:include page="/WEB-INF/jsp/common/footer.jsp"/>
 </body>
 </html>
